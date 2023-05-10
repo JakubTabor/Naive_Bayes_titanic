@@ -6,3 +6,4 @@
 # """inputs = pd.concat([inputs, dummies], axis = 'columns')""" and now I dont need "Sex" columns, so I drop it 
 # """inputs.drop('Sex', axis = 'columns', inplace = True)""" I also check if there is any (no value) """inputs.columns[inputs.isna().any()]"""
 # I "fill" my "Age" and "Fare" columns with "mean" value "inputs.Age.fillna(inputs.Age.mean())" "inputs.Fare.fillna(inputs.Fare.mean())"
+# Now I can import "train_test_split" and get "train" and "test" set, I check length of "X_train" and ""X_test" "len(X_train)" "len(X_test)"
