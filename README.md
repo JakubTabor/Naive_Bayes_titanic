@@ -8,3 +8,4 @@
 # I "fill" my "Age" and "Fare" columns with "mean" value "inputs.Age.fillna(inputs.Age.mean())" "inputs.Fare.fillna(inputs.Fare.mean())"
 # Now I can import "train_test_split" and get "train" and "test" set, I check length of "X_train" and ""X_test" "len(X_train)" "len(X_test)"
 # Then from "sklearn.naive_bayes" I import "GaussianNB" model and train it "model.fit(X_train,y_train)"
+# I get the "score" """model.score(X_test, y_test)""" and get predictions between 0 and 1 "model.predict_proba(X_test[: 10])"
