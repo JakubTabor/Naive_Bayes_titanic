@@ -5,3 +5,4 @@
 # I need to "concatenate" my "dummies" columns with rest of "df", so I use "pd.concat" and save it into "inputs" 
 # """inputs = pd.concat([inputs, dummies], axis = 'columns')""" and now I dont need "Sex" columns, so I drop it 
 # """inputs.drop('Sex', axis = 'columns', inplace = True)""" I also check if there is any (no value) """inputs.columns[inputs.isna().any()]"""
+# I "fill" my "Age" and "Fare" columns with "mean" value "inputs.Age.fillna(inputs.Age.mean())" "inputs.Fare.fillna(inputs.Fare.mean())"
